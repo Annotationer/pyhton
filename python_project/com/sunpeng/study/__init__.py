@@ -254,6 +254,21 @@ print(b<c)
 s=set()
 s.add('AAA')
 print(s)
+'''
+s1={'a':1}
+print(s1)
+'''
+s.add((0,2,3))
+print(s)
+print(s|{1}|{(8,9)})
+print(s)
+print(0 in s)
+#s.add(z)
+#print(s)
+s.frozenset(z)
+print(s)
+
+
 
 
 
