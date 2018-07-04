@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
 import re
 a = re.split('\W+', 'runoob, runoob, runoob.')
 #['runoob', 'runoob', 'runoob', '']

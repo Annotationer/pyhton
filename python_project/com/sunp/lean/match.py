@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: UTF-8 -*- 
+# -*- coding: UTF-8 -*-
  
 import re
 print(re.match('www', 'www.runoob.com').span())  # 在起始位置匹配
@@ -7,7 +7,8 @@ print(re.match('com', 'www.runoob.com'))         # 不在起始位置匹配
 
 line = "Cats are smarter than dogs"
 
-matchObj = re.match(r'(.*) are (.*?) .*', line ,re.RegexFlag.M|re.RegexFlag.I)
+#matchObj = re.match(r'(.*) are (.*?) .*', line ,re.RegexFlag.M|re.RegexFlag.I)
+matchObj = re.match(r'(.*) are (.*?) .*', line ,re.M|re.I)
 
 if matchObj:
     print ("matchObj.group() : ", matchObj.group())
@@ -43,7 +44,7 @@ print(re.sub('(?P<value>\d+)', "", s))
 pattern = re.compile(r'\d+') 
 m = pattern.match('one12twothree34four') 
 print(m)
-pattern = re.compile(r'([a-z]+) ([a-z]+)', re.RegexFlag.I)   # re.I 表示忽略大小写
+pattern = re.compile(r'([a-z]+) ([a-z]+)', re.I)   # re.I 表示忽略大小写
 m = pattern.match('Hello World Wide Web')
 m.group(0)                            # 返回匹配成功的整个子串
 #'Hello World'
@@ -59,7 +60,7 @@ m.span(2)                             # 返回第二个分组匹配成功的子�
 #(6, 11)
 m.groups()                            # 等价于 (m.group(1), m.group(2), ...)
 #('Hello', 'World')
-m.group(3)                            # 不存在第三个分组    
+'''m.group(3) '''                           # 不存在第三个分组    
 #Traceback (most recent call last):
 #  File "<stdin>", line 1, in <module>
 #IndexError: no such group

@@ -1,8 +1,5 @@
-'''
-Created on 2018年6月21日
-
-@author: tonglian
-'''
-
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
 def runoob22():
     print("I'm in runoob2")

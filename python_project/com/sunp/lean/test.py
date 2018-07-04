@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
 '''
 i = 1
 while i < 3:

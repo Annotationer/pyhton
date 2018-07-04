@@ -1,8 +1,6 @@
-'''
-Created on 2018年6月25日
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
-@author: tonglian
-'''
 
 '''
 fo = open ("a.txt","r+")

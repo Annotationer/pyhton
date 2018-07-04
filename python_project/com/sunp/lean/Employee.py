@@ -1,8 +1,3 @@
-'''
-Created on 2018年6月27日
-
-@author: tonglian
-'''
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
