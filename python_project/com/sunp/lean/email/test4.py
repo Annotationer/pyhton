@@ -27,12 +27,11 @@ att1["Content-Disposition"] = 'attachment; filename="test.txt"'
 message.attach(att1)
  
 # 构造附件2，传送当前目录下的 runoob.txt 文件
-'''
 att2 = MIMEText(open('runoob.txt', 'rb').read(), 'base64', 'utf-8')
 att2["Content-Type"] = 'application/octet-stream'
 att2["Content-Disposition"] = 'attachment; filename="runoob.txt"'
 message.attach(att2)
-'''
+
 try:
     smtpObj = smtplib.SMTP('localhost')
     smtpObj.sendmail(sender, receivers, message.as_string())
